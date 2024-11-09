@@ -13,6 +13,18 @@ const circleSchema = new mongoose.Schema({
         type:mongoose.Schema.Types.ObjectId,
         ref:'User'
     }],
+    subCircles:[{
+        type:mongoose.Schema.Types.ObjectId,
+        ref:'Circle'
+    }],
+    parentCircle:{
+        type:mongoose.Schema.Types.ObjectId,
+        ref:'Circle'
+    },
+    isPublic:{
+        type:Boolean,
+        default:true
+    },
     createdAt:{
         type:Date,
         default:Date.now

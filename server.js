@@ -7,6 +7,8 @@ const circleRoutes=require('./routes/circleRoutes');
 const replyRoutes=require('./routes/replyRoutes');
 const r2r=require('./routes/r2r')
 const upvotesRoutes=require('./routes/upvoteRoutes');
+const childRoutes=require('./routes/childRoutes');
+const parentRoutes=require('./routes/parentRoutes');
 
 dotenv.config();
 
@@ -24,7 +26,11 @@ const connect = mongoose.connect(process.env.MONGO_URI)
 
 const PORT=process.env.PORT || 3000;
 
+//Routing
+
 app.use('/api/users',userRoutes); // http://localhost:3000/api/users 
+app.use('/api/child',childRoutes);
+app.use('/api/parent',parentRoutes);
 app.use('/api/posts',postRoutes);
 app.use('/api/circles',circleRoutes);
 app.use('/api/replies',replyRoutes);

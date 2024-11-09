@@ -1,0 +1,40 @@
+//user
+
+{
+    "childName":"Child",
+    "fatherName":"Child father",
+    "parentPhoneNumber":"3333333333",
+    "password":"child22",
+    "schoolId":"6787",
+    "childSchool":"St marys Academy",
+    "childClass":"8th",
+    "childSection":"8th-D",
+    "address":"Delhi"
+}
+
+
+//post
+
+{
+    "content":"My child notebook got lost"
+    "author":"671bd179a94bc62d61c4a30c"
+}
+
+//reply to post
+
+{
+    "content":"nikhil has it of section 8th-F",
+    "author":"6720a1fdf5025c424bdd6cc0"
+}
+
+//reply to reply (nested)
+{
+    "content":"yea he stole it in front of my eyes :/",
+    "author":"671b500d451b7279112dc9b6"
+}
+
+//upvote
+
+{
+    "type":"upvote"
+}
