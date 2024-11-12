@@ -1,6 +1,7 @@
 const mongoose = require('mongoose');
 
 const replySchema = new mongoose.Schema({
+    //content, author, post, thread, upvotes, downvotes, createdAt
     content: {
         type: String,
         required: true
